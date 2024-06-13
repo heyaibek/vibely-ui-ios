@@ -32,7 +32,7 @@ struct Pickers: View {
 						}
 						.buttonStyle(.bordered)
 						.fullScreenCover(isPresented: $showNumberPicker) {
-							NumberPicker("Text Picker", value: number, icon: .systemXSquare, range: 0 ... 100, format: numberFormat) { selection in
+							NumberPicker("Number Picker", value: number, icon: .systemXSquare, range: 0 ... 100, format: numberFormat) { selection in
 								number = selection
 							}
 							.background(TransparentBackground())
